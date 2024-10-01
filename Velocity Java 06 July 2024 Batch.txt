@@ -1,0 +1,88 @@
+Access specifier in java
+----------------------------------------------------------------------------------------------
+Assignments share- Program with output-> 1 to 6- review programs.
+
+- we can apply to variable, method and class
+- used to restrict the access
+
+- 4 types of access specifier-
+
+private
+default 
+protected
+public
+
+private-
+
+- apply to global variable, method, inner class.
+- outer class cant be private
+- local variable cant be private
+- can access/call within class not outside of class or outside of package
+
+
+default-
+
+- apply to global variable, local variable, method, inner class
+- apply to outer class.
+- can access within same class or different class within same package only.
+- no need to use keyword default like private
+- when the access specifier is not mentioned then it will treat as default access specifier.
+
+
+protected-
+
+- apply to global variable, method, inner class
+- cant apply to local variable and outer class
+- can access within same class or different class or in the same package
+  and different package but inheritance is applicable.(ignore it).
+
+
+public-
+
+- apply to global variable, method, inner class, outer class
+- cant apply to local variable
+- we can access within class or outside of class or same package or different package.
+
+
+why we use access specifier ?
+
+Business Requirement
+
+Employee-> Add, Update, Fetch , Delete operation-> perform
+
+sequence will be same
+
+
+o/p-1
+
+this is add operation....
+this is update operation....
+this is fetch operation....
+this is delete operation....
+
+o/p-2
+
+this is update operation....
+this is add operation....
+this is delete operation....
+this is fetch operation....
+
+
+o/p-3
+
+this is delete operation....
+this is add operation....
+this is update operation....
+this is fetch operation....
+this is delete operation....
+this is add operation....
+
+
+
+o/p-
+
+this is add operation....
+this is update operation....
+this is fetch operation....
+this is delete operation....
+
